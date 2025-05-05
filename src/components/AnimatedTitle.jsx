@@ -23,7 +23,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
           ease: "power2.inOut",
           stagger: 0.02,
         },
-        0,
+
       );
     }, containerRef);
 
@@ -32,12 +32,12 @@ const AnimatedTitle = ({ title, containerClass }) => {
 
   return (
     <div ref={containerRef} className={`animated-title ${containerClass}`}>
-      {title.split("<br/>").map((line, index) => (
+      {title.split("<br />").map((line, index) => (
         <div
           key={index}
           className="flex-ceter max-w-full flex-wrap gap-2 px-10 md:gap-3"
         >
-          {line.split(" ").map((word, i) => (
+          {line.split(' ').map((word, i) => (
             <span
               key={i}
               className="animated-word"
