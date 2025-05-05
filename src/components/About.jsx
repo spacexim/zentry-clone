@@ -67,7 +67,10 @@ const About = () => {
         </div>
 
         {/* 小字文本 - 直接放在标题下方 */}
-        <div ref={subTextRef} className="max-w-2xl mt-4 text-center">
+        <div
+          ref={subTextRef}
+          className="max-w-2xl mt-4 text-center font-circular-web text-lg"
+        >
           <p>The Game of Games begins—your life, now an epic MMORPG</p>
           <p className="text-gray-500">
             Zentry unites every player from countless games and platforms, both
